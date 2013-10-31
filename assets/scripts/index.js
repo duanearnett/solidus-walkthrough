@@ -31,10 +31,14 @@ jQuery(document).ready(function($){
         location.hash = current.data('graph-id')
     })
 
+    $('#modal-photo').on('hidden.bs.modal', function(){
+        location.hash = '';
+    })
+
 });
 
 jQuery(window).load(function(){
-    if(solidus.context.page.name == 'album' && location.hash.length > 0)
+    if(solidus.context.page.name == 'album' && location.hash.length > 1)
     {
         var graph_id = location.hash.replace('#', '');
 
