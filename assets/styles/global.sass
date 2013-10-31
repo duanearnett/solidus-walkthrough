@@ -24,9 +24,7 @@
     .thumbnail-mask
       max-height: 190px
   @media screen and (max-width: 768px)
-    padding-bottom: 10px
-    min-height: none
-    max-height: none
+    min-height: 0
     .thumbnail-mask
       max-height: 250px
     .btn
@@ -39,6 +37,10 @@
     min-height: 350px
     max-height: 350px
     padding-bottom: 60px
+    @media screen and (max-width: 768px)
+      padding-bottom: 10px
+      min-height: 0
+      max-height: 500px
 
 .modal-dialog
   text-align: center
