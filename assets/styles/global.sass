@@ -1,0 +1,49 @@
+.thumbnail
+  position: relative
+  min-height: 230px
+  h3
+    font-size: 16px
+    margin-top: 10px
+
+  .thumbnail-mask
+    overflow: hidden
+    max-height: 168px
+    text-align: center
+    img
+      max-width: 100%
+      height: auto
+      &.loading
+        height: 100%
+        max-height: 100%
+        width: auto
+  .btn
+    position: absolute
+    bottom: 20px
+    width: 91%
+  @media screen and (max-width: 1200px)
+    .thumbnail-mask
+      max-height: 190px
+  @media screen and (max-width: 768px)
+    padding-bottom: 10px
+    min-height: none
+    max-height: none
+    .thumbnail-mask
+      max-height: 250px
+    .btn
+      bottom: 0
+      position: relative
+      width: 100%
+
+#albums
+  .thumbnail
+    min-height: 350px
+    max-height: 350px
+    padding-bottom: 60px
+
+.modal-dialog
+  img
+    width: 100%
+  @media screen and (min-width: 768px)
+    width: 50%
+
+
